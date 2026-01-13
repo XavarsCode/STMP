@@ -171,7 +171,8 @@ const TRAIN_MODELS = {
     }
 };
 
-// API simulation - In production, this would call real RATP/Île-de-France Mobilités API
+// API configuration for future real-time integration
+// Currently using simulation; in production, this would call RATP/Île-de-France Mobilités API
 const API_CONFIG = {
     baseUrl: 'https://api-ratp.pierre-grimaud.fr/v4',
     updateInterval: 30000 // 30 seconds

@@ -9,6 +9,10 @@ let mapScale = 1;
 let mapOffsetX = 0;
 let mapOffsetY = 0;
 
+// Constants
+const UPDATE_INTERVAL_MS = 3000; // Update every 3 seconds
+const UPDATE_INTERVAL_SECONDS = UPDATE_INTERVAL_MS / 1000;
+
 // Map configuration
 const MAP_CONFIG = {
     centerLat: 48.8566,
@@ -414,7 +418,7 @@ function updateTrainPositions() {
     // Update each train
     simulatedTrains.forEach(train => {
         // Increment progress based on speed (simulation)
-        const progressIncrement = (train.speed / 3600) / (line.interval / 3); // Adjusted for 3 second updates
+        const progressIncrement = (train.speed / 3600) / (line.interval / UPDATE_INTERVAL_SECONDS);
         train.progress += progressIncrement;
         
         // Check if train reached next station
@@ -522,14 +526,14 @@ function startAutoUpdate() {
             updateTrainPositions();
             updateTrainList();
         }
-    }, 3000); // Update every 3 seconds for smooth animation
+    }, UPDATE_INTERVAL_MS);
 }
 
 // Utility function to get contrasting text color
 function getContrastColor(hexColor) {
-    const r = parseInt(hexColor.substr(1, 2), 16);
-    const g = parseInt(hexColor.substr(3, 2), 16);
-    const b = parseInt(hexColor.substr(5, 2), 16);
+    const r = parseInt(hexColor.substring(1, 3), 16);
+    const g = parseInt(hexColor.substring(3, 5), 16);
+    const b = parseInt(hexColor.substring(5, 7), 16);
     const brightness = (r * 299 + g * 587 + b * 114) / 1000;
     return brightness > 128 ? '#000000' : '#FFFFFF';
 }

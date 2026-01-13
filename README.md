@@ -20,8 +20,8 @@ STMP est une application web qui permet de suivre les trains du métro parisien 
 
 - **HTML5/CSS3** : Structure et style de l'interface
 - **JavaScript** : Logique applicative et algorithmes
-- **Leaflet.js** : Bibliothèque de cartographie interactive
-- **OpenStreetMap** : Données cartographiques
+- **Canvas API** : Rendu de la carte interactive
+- **OpenStreetMap coordinates** : Données GPS des stations
 
 ## Structure du projet
 
