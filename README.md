@@ -2,7 +2,7 @@
 ## Service de Traçage du Métro Parisien
 
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/RATP_N_LOGO.jpg.webp/235px-RATP_N_LOGO.jpg.webp.png" alt="RATP" height="70"/>
+  <img src="https://upload.wikimedia.org/wikipedia/fr/archive/0/01/20211228035137%21RATP.svg" alt="RATP" height="70"/>
   &nbsp;&nbsp;&nbsp;
   <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/ce/IdFMobilit%C3%A9s.svg/960px-IdFMobilit%C3%A9s.svg.png" alt="Île-de-France Mobilités" height="70"/>
 </p>
