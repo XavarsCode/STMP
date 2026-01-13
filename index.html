@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STMP - Service de Traçage du Métro Parisien</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>🚇 STMP - Service de Traçage du Métro Parisien</h1>
+        <p>Suivi en temps semi-réel des métros parisiens</p>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="controls">
+                <h2>Lignes de Métro</h2>
+                <div id="line-selector" class="line-selector">
+                    <!-- Metro lines will be added dynamically -->
+                </div>
+            </div>
+
+            <div class="train-info">
+                <h2>Informations des Trains</h2>
+                <div id="train-list" class="train-list">
+                    <p class="placeholder">Sélectionnez une ligne pour voir les trains actifs</p>
+                </div>
+            </div>
+
+            <div class="train-models">
+                <h2>Modèles de Matériel Roulant</h2>
+                <div id="model-info" class="model-info">
+                    <p class="placeholder">Les informations sur les modèles s'afficheront ici</p>
+                </div>
+            </div>
+        </aside>
+
+        <main class="map-container">
+            <canvas id="map"></canvas>
+            <div class="map-info" id="map-info">
+                <p>Cliquez sur une station ou un train pour voir les détails</p>
+            </div>
+            <div class="legend">
+                <h3>Légende</h3>
+                <div class="legend-item">
+                    <span class="legend-icon station"></span>
+                    <span>Station</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-icon train"></span>
+                    <span>Train</span>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>STMP - Données fournies par l'API RATP/Île-de-France Mobilités</p>
+        <p>Mise à jour automatique toutes les 3 secondes</p>
+    </footer>
+
+    <script src="metro-data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
