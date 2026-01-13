@@ -1,5 +1,5 @@
-# STMP  
-## Service de Traçage du Métro Parisien
+# SSMP  
+## Service de Suivi du Métro Parisien
 
 <p align="center">
   <img src="https://upload.wikimedia.org/wikipedia/fr/archive/0/01/20211228035137%21RATP.svg" alt="RATP" height="70"/>
@@ -11,7 +11,7 @@
 
 ## 1. Présentation générale
 
-**STMP (Service de Traçage du Métro Parisien)** est un projet de plateforme web visant à **modéliser, estimer et visualiser la circulation des rames du métro parisien** sur une carte interactive, à partir de **données publiques ouvertes**.
+**SSMP (Service de Suivi du Métro Parisien)** est un projet de plateforme web visant à **modéliser, estimer et visualiser la circulation des rames du métro parisien** sur une carte interactive, à partir de **données publiques ouvertes**.
 
 Le projet a pour objectif de transformer des données brutes (horaires, trafic, fréquences, perturbations) en une **représentation spatiale et temporelle cohérente**, compréhensible et exploitable.
 
