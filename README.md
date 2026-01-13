@@ -15,7 +15,7 @@
 
 Le projet a pour objectif de transformer des données brutes (horaires, trafic, fréquences, perturbations) en une **représentation spatiale et temporelle cohérente**, compréhensible et exploitable.
 
-STMP ne fournit **pas** de localisation GPS réelle des trains, mais une **estimation dynamique basée sur des modèles temporels et topologiques du réseau**.
+STSP ne fournit **pas** de localisation GPS réelle des trains, mais une **estimation dynamique basée sur des modèles temporels et topologiques du réseau**.
 
 
 
